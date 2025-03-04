@@ -22,11 +22,3 @@ jobs:
 
             - name: Run Images
               run: docker run hello-world
-    deploy-on-mac:
-        runs-on: macos-latest
-        steps:
-            - name: Echo Docker Details
-              run: docker info
-
-            - name: Run Images
-              run: docker run hello-world
