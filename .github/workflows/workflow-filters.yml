@@ -1,4 +1,4 @@
-name: Explore Workflow Filters
+name: Workflow Filters and Activities
 
 on: 
     workflow_dispatch:
@@ -8,14 +8,14 @@ on:
         branches:
             - main
             - 'feature/*'
-        branches-ignore:
-            - test/**
-            - feature/*
+        # branches-ignore:
+        #     - test/**
+        #     - feature/*
 
     pull_request:
         types:
             - opened
-            - clsoed
+            - closed
         paths:
             - 'README.md'
         branches:
